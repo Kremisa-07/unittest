@@ -9,11 +9,15 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ParamDigitalProductTest {
+    // kresadlo
+    String basicDesc = "description";
+    BigDecimal basicPrice = new BigDecimal("10.00");
+    String basicUrl = "https://example.com/download";
 
     @ParameterizedTest
     @ValueSource(strings = {"something", "another thing", "12345", "!@#$%", ""})
     void nameTest(String name) {
-        DigitalProduct product = new DigitalProduct(name, "desc", BigDecimal.ZERO, "http://example.com/download");
+        DigitalProduct product = new DigitalProduct(name, basicDesc, basicPrice, basicUrl);
         assertEquals(name, product.getName());
     }
 }

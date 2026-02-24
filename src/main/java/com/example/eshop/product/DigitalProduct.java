@@ -17,4 +17,5 @@ public class DigitalProduct extends Product {
     public void setDownloadUrl(String downloadUrl) {
         this.downloadUrl = downloadUrl;
     }
+
 }

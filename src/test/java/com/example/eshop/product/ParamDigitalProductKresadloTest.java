@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ParamDigitalProductKresadloTest {
-    // kresadlo
     String basicDesc = "description";
     BigDecimal basicPrice = new BigDecimal("10.00");
     String basicUrl = "https://example.com/download";

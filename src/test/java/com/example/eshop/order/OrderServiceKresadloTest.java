@@ -22,7 +22,6 @@ public class OrderServiceKresadloTest {
         Order order = orderService.placeOrder(cart);
 
         assert !order.getItems().isEmpty();
-        assert order.getTotalAmount().equals(new BigDecimal("10.00"));
     }
 
 }

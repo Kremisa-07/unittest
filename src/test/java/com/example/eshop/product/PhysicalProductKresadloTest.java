@@ -9,13 +9,16 @@ public class PhysicalProductKresadloTest {
     void createOrderService() {
         double weight = 100.0;
         BigDecimal price = new BigDecimal("10.00");
+        BigDecimal shippingCost = new BigDecimal("5.00");
 
-        PhysicalProduct product = new PhysicalProduct("something", "something", price, weight, new BigDecimal("5.00"));
+        PhysicalProduct product = new PhysicalProduct("something", "something", price, weight, shippingCost);
         assert product.getName().equals("something");
         assert product.getDescription().equals("something");
         assert product.getPrice().equals(price);
         assert product.getWeight() == weight;
-        assert product.getShippingCost().equals(new BigDecimal("5.00"));
+        assert product.getShippingCost().equals(shippingCost);
+        //meant to fail
+        assert product.getShippingCost().equals(shippingCost.add(new BigDecimal("1.00")));
     }
 
 }

@@ -1,14 +1,12 @@
-package com.example.eshop;
-
-import com.example.eshop.product.PhysicalProduct;
+package com.example.eshop.product;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
-public class PhysicalProductTest {
+public class PhysicalProductKresadloTest {
 
     @Test
-    void createPhysicalProduct() {
+    void createOrderService() {
         double weight = 100.0;
         BigDecimal price = new BigDecimal("10.00");
 
@@ -19,6 +17,5 @@ public class PhysicalProductTest {
         assert product.getWeight() == weight;
         assert product.getShippingCost().equals(new BigDecimal("5.00"));
     }
-
 
 }

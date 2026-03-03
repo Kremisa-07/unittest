@@ -1,6 +1,5 @@
-package com.example.eshop;
+package com.example.eshop.product;
 
-import com.example.eshop.product.DigitalProduct;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -8,7 +7,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ParamDigitalProductTest {
+public class ParamDigitalProductKresadloTest {
     // kresadlo
     String basicDesc = "description";
     BigDecimal basicPrice = new BigDecimal("10.00");

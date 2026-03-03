@@ -1,10 +1,8 @@
-package com.example.eshop;
-import com.example.eshop.product.DigitalProduct;
-import org.junit.jupiter.api.DisplayName;
+package com.example.eshop.product;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 
-public class DigitalProductTest {
+public class DigitalProductKresadloTest {
 
     @Test
     void createDigitalProduct() {

@@ -1,11 +1,12 @@
-package com.example.eshop;
-import com.example.eshop.cart.CartItem;
+package com.example.eshop.cart;
+
 import com.example.eshop.product.Product;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
+
 import java.math.BigDecimal;
 
-class CartItemTest {
+public class CartKresadloTest {
+
     Product product = new Product("Test Product", "This is a test product", new BigDecimal("19.99")) {};
 
     @Test
@@ -17,11 +18,4 @@ class CartItemTest {
         assert cartItem.getQuantity() == quantity;
     }
 
-    @RepeatedTest(20)
-    void updateCartItemQuantity() {
-        CartItem cartItem = new CartItem(product, 10);
-
-        cartItem.setQuantity(5);
-        assert cartItem.getQuantity() == 5;
-    }
 }

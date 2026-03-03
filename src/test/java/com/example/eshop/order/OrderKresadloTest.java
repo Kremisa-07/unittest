@@ -1,18 +1,14 @@
-package com.example.eshop;
+package com.example.eshop.order;
 
 import com.example.eshop.cart.Cart;
 import com.example.eshop.cart.CartItem;
-import com.example.eshop.order.Order;
-import com.example.eshop.order.OrderStatus;
 import com.example.eshop.product.DigitalProduct;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.util.List;
-import java.util.UUID;
 
-public class OrderTest {
+public class OrderKresadloTest {
     @Test
     void createOrder() {
 

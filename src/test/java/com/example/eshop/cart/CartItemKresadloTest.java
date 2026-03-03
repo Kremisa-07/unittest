@@ -15,6 +15,7 @@ class CartItemKresadloTest {
         cart.addItem(product, quantity);
         CartItem cartItem = cart.getItems().getLast();
 
+        //testuje jestli se pridal spravny item
         assert cart.getItems().getLast().equals(cartItem);
     }
 }

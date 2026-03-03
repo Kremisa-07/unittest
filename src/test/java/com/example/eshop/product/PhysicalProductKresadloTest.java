@@ -17,7 +17,7 @@ public class PhysicalProductKresadloTest {
         assert product.getPrice().equals(price);
         assert product.getWeight() == weight;
         assert product.getShippingCost().equals(shippingCost);
-        //meant to fail
+        //test ktery failne vzdy
         assert product.getShippingCost().equals(shippingCost.add(new BigDecimal("1.00")));
     }
 

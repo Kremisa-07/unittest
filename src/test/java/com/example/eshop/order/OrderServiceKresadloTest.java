@@ -21,6 +21,7 @@ public class OrderServiceKresadloTest {
         OrderService orderService = new OrderService(paymentProcessor);
         Order order = orderService.placeOrder(cart);
 
+        // testuje jestli se objednavka obsahuje alespon jeden item
         assert !order.getItems().isEmpty();
     }
 

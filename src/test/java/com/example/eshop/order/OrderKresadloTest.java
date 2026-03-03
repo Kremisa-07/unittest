@@ -19,6 +19,7 @@ public class OrderKresadloTest {
         Cart cart = new Cart();
         items.forEach(item -> cart.addItem(item.getProduct(), item.getQuantity()));
 
+        // testuje jestli Order ma spravne nastaveny items, totalAmount a status
         Order order = new Order(cart);
         assert order.getItems().size() == items.size();
         assert order.getTotalAmount().equals(new BigDecimal("50.00"));

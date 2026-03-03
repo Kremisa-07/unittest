@@ -13,6 +13,7 @@ public class CartKresadloTest {
     void createCartItem() {
         int quantity = 10;
 
+        // testuje jestli se pridal CartItem
         CartItem cartItem = new CartItem(product, quantity);
         assert cartItem.getProduct().equals(product);
         assert cartItem.getQuantity() == quantity;

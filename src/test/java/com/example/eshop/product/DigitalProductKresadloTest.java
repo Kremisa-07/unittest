@@ -12,6 +12,7 @@ public class DigitalProductKresadloTest {
         BigDecimal price = new BigDecimal("10.00");
         String url = "https://example.com/download/something";
 
+        // celkovy test noveho DigitalProduct
         DigitalProduct product = new DigitalProduct(name, description, price, url);
         assert product.getName().equals(name);
         assert product.getDescription().equals(description);

@@ -12,6 +12,7 @@ public class ParamDigitalProductKresadloTest {
     BigDecimal basicPrice = new BigDecimal("10.00");
     String basicUrl = "https://example.com/download";
 
+    // test ruznych jmen pro DigitalProduct
     @ParameterizedTest
     @ValueSource(strings = {"something", "another thing", "12345", "!@#$%", ""})
     void nameTest(String name) {
